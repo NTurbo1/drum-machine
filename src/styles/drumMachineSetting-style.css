@@ -1,0 +1,76 @@
+.drum-pad {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(115, 115, 115);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px black;
+}
+.drum-pad .drum-pad-key {
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+#drum-machine-setting-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 290px;
+}
+#drum-machine-setting-box #power-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#drum-machine-setting-box #power-box .switch-btn {
+  height: 25px;
+  width: 50px;
+  background-color: black;
+  padding: 0 2.5px;
+  display: flex;
+  align-items: center;
+}
+#drum-machine-setting-box #power-box .switch-btn .switch {
+  height: 20px;
+  width: 20px;
+  background-color: blue;
+}
+#drum-machine-setting-box #sound-name-box {
+  height: 50px;
+  width: 200px;
+  background-color: rgb(115, 115, 115);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#drum-machine-setting-box #sound-name-box #sound-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+#drum-machine-setting-box #volume-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#drum-machine-setting-box #volume-box #volume-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+#drum-machine-setting-box #volume-box #volume-control-box {
+  display: flex;
+  align-items: center;
+}
+
+.btn-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.switched-on {
+  margin-left: auto;
+}/*# sourceMappingURL=drumMachineSetting-style.css.map */

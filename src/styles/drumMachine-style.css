@@ -1,0 +1,5 @@
+#drum-machine {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}/*# sourceMappingURL=drumMachine-style.css.map */

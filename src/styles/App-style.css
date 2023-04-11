@@ -1,0 +1,33 @@
+@import './drumPad-style.css';
+@import './drumMachine-style.css';
+@import './drumMachineSetting-style.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, #root {
+  width: 100vw;
+  height: 100vh;
+}
+
+#root {
+  background-color: gray;
+}
+#root #main-board {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root #main-board #drum-box {
+  width: 680px;
+  height: 320px;
+  background-color: rgb(176, 176, 176);
+  border: 5px solid orange;
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+}/*# sourceMappingURL=App-style.css.map */

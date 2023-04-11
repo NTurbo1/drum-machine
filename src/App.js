@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import { DrumMachine } from "./components/drumMachine";
+import { DrumMachineSetting } from "./components/drumMachineSetting";
+
+import './styles/App-style.css';
 
 function App() {
+  const [powerOn, setPower] = useState(true)
+  const [clickedSoundName, setClickedSoundName] = useState('')
+  const [audioVolume, setAudioVolume] = useState(50)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="main-board">
+      <div id="drum-box">
+        <DrumMachine powerOn = {powerOn} setClickedSoundName = {setClickedSoundName}
+            audioVolume = {audioVolume}
+        />
+        <DrumMachineSetting powerOn = {powerOn} setPower = {setPower} clickedSoundName = {clickedSoundName}
+            audioVolume = {audioVolume} setAudioVolume = {setAudioVolume}
+        />
+      </div>
     </div>
   );
 }
 
-export default App;
+export default App; 
